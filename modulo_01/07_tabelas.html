@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Tabelas</title>
+		<meta charset="utf-8">
+
+		<style>
+			table,th, td {border:1px solid #000;}
+			th, td {padding: 7px}
+			.nome {background-color:red;}
+			.email {background-color:green;}
+			.telefone {background-color:blue;}
+			.cargo {background-color:yellow;}
+		</style>
+	</head>
+
+	<body>
+		<h1>Tabelas</h1>
+			<table>
+				<caption>Cadastro de clientes</caption>
+			<colgroup>
+				<col class="nome">
+				<col class="email">
+				<col class="telefone">
+				<col class="cargo">
+			</colgroup>
+
+			<thead>
+				<tr>
+					<th>Nome:</th>
+					<th>Email:</th>
+					<th>Telefone:</th>
+					<th>Cargo</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Cliente</td>
+					<td>cliente@hotmail.com</td>
+					<td>(71)9-1234-5678</td>
+					<td rowspan="2">Desenvolvedor Web</td>
+				</tr>
+
+				<tr>
+				<td>Cliente1</td>
+				<td>Cliente1@yahoo.com.br</td>
+				<td>(71)9-2345-6789</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="4">Total:2</td>
+				</tr>
+			</tfoot>
+		</table>
+		<!--
+			table - define uma tabela.
+			caption / rubrica - define a rublica da tabela.
+			colgroup - define o grupo de colunas da tabela.
+			col - define o atributo da tabela.
+			thead / cabeça - define o cabeçalho da tabela.
+			tr - define uma linha da tabela.
+			th - define o cabeçalho da tabela.
+			tbody - define o corpo da tabela.
+			rowspan / fileiras.
+			colspan - numero que quer ocultar.
+			td - define uma celula da tabela.
+			tfoot - define o rodapé da tabela.
+			style - define um estilo.
+		-->
+		<footer>
+			<p>Desenvolvido por ISS</p>
+		</footer>
+	</body>
+</html>
